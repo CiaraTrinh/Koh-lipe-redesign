@@ -1680,10 +1680,35 @@ header {
         padding: 10px 40px 10px 40px;
     }
 
-    .scarborough-menu .menu-section a, 
-    .toronto-menu .menu-section a{
-        font-size: 14px;
+    .menu-section {
+        width: 92%;
+        max-width: 500px;
+        margin: 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        padding: 12px 16px;
+        box-sizing: border-box;
+    }
+
+    .menu-section a {
+        font-size: 13px;
         white-space: nowrap;
+        padding: 6px 10px;
+        background: #F6F5F2;
+        border-radius: 20px;
+        border: 1px solid #E2C799;
+    }
+
+    .menu-section a:hover,
+    .menu-section a.active {
+        background: #E2C799;
+        color: #45240D;
+    }
+
+    .menu-section::-webkit-scrollbar {
+        display: none;
     }
 
     .special-menu {
