@@ -1,0 +1,1773 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+html {
+    overflow-x: hidden;
+}
+
+body {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background: #F6F5F2;
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+}
+
+/**************************************************************/
+/****************************HEADER****************************/
+/**************************************************************/
+
+/*header nav-bar*/
+
+header {
+    background: #E2C799;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+
+.nav-bar .logo {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar .logo img {
+    width: 100%;
+    height: auto;
+}
+
+.nav-bar .nav-links {
+    display: flex;
+    height: 100%;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 40px;
+}
+
+.nav-links a {
+    font-size: 18px;
+    font-weight: 800;
+    color: #7B4019;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #7B4019;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.nav-links a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+/**************************************************************/
+/************************MICHELIN BADGE************************/
+/**************************************************************/
+
+.michelin-badge {
+    display: flex;
+    justify-content: center;
+    padding: 38px 0;
+}
+
+.michelin-badge .michelin-ctn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /*create 2 columna*/
+}
+
+.michelin-ctn .badge {
+    background: #BB371A;
+    color: #fff;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.michelin-ctn p {
+    margin: 5px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/**************************************************************/
+/************************HEADER ADDRESS************************/
+/**************************************************************/
+
+.address-bar {
+    background: #E2C799;
+    display: flex;
+    justify-content: center;
+    padding: 14px;
+    width: 100vw;
+}
+
+.address-bar p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #7B4019;
+}
+
+/************************************************************/
+/**************************HOME PAGE*************************/
+/************************************************************/
+
+/*reservation section*/
+
+.reservation-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.reservation-bar h2 {
+    text-align: center;
+    padding: 0 0 30px 0;
+    color: #7B4019;
+    font-size: 28px;
+}
+
+.reservation-bar .rev-ctn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+    background: #fff;
+    border-radius: 22px;
+    width: 700px;
+}
+
+/*calendar box*/
+
+.calendar {
+    width: 380px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: #fff;
+    border: 3px solid #D9D9D9;
+    border-radius: 16px;
+}
+
+.monthYear {
+    text-align: center;
+    font-weight: 600;
+    width: 150px;
+    font-size: 18px;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.heading button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.weekday {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.day {
+    text-align: center;
+    padding: 10px;
+    color: #757575;
+    font-weight: 500;
+}
+
+.dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    transition: 0.2s;
+}
+
+.date:hover,
+.date.active {
+    background: #ffe8a3;
+    color: #682d03;
+}
+
+.date.inactive {
+    color: #b3b3b3;
+}
+
+.date.inactive:hover {
+    color: #682d03;
+}
+
+/*reservation information*/
+
+.rev-ctn .rev-info {
+    padding: 0 20px;
+}
+
+.rev-info h3 {
+    color: #682d03;
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.rev-info .location-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.location-options .loc-btn {
+    border: 1px solid #7B4019;
+    color:#7B4019;
+    border-radius: 8px;
+    background: none;
+    width: 230px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.location-options .loc-btn.active,
+.location-options .loc-btn:hover {
+    background: #E2C799;
+    color: #682d03;
+    font-weight: 600;
+}
+
+/*Time reservation*/
+
+.time .select-time {
+    display: flex;
+    align-items: center;
+    gap: 54px;
+    justify-content: center;
+    border: 1px solid #7B4019;
+    color:#7B4019;
+    border-radius: 8px;
+    background: none;
+    padding: 8px;
+    position: relative;
+}
+
+.select-time ion-icon {
+    font-size: 20px;
+}
+
+.select-time select {
+    width: 140px;
+    border: none;
+    color: #7B4019;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/*People reservation*/
+
+.people .select-people {
+    display: flex;
+    align-items: center;
+    gap: 78px;
+    justify-content: center;
+    border: 1px solid #7B4019;
+    color:#7B4019;
+    border-radius: 8px;
+    background: none;
+    padding: 8px;
+    position: relative;
+}
+
+.select-people ion-icon {
+    font-size: 20px;
+}
+
+.select-people select {
+    width: 110px;
+    border: none;
+    color: #7B4019;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    z-index: 1;
+    align-items: center;
+}
+
+.confirmation {
+    margin-top: 25px;
+    width: 230px;
+    padding: 10px;
+    color: #7B4019;
+    background-color: #E2C799;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+
+/*confirm button*/
+
+.confirmation:hover {
+    background-color: #FFE8A3;
+}
+
+/*quote section*/
+
+.quote {
+    display: flex;
+    padding: 20px 45px 60px 45px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.quote h2 {
+    font-family: "Kaisei HarunoUmi", serif;
+    font-weight: 600;
+    font-style: bold;
+    color: #7B4019;
+    font-size: 28px;
+    line-height: 2;
+}
+
+/*********************************************************/
+/************************MENU PAGE************************/
+/*********************************************************/
+
+#menu-page {
+    display: none;
+}
+
+.active-section {
+    display: flex;
+}
+
+.hide-section {
+    display: none;
+}
+
+.choose-location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 45px;
+    gap: 30px;
+    width: 100vw;
+}
+
+.choose-location h2 {
+    color: #7B4019;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.choose-location-menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.choose-location-menu .choose-location-menu-2 {
+    line-height: 2;
+}
+
+.choose-location-menu-2 a {
+    color: #CF6C2A;
+    font-size: 20px;
+}
+
+.choose-location-menu-2 .addr-1 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.choose-location-menu-2 .addr-1:hover {
+    text-decoration: underline;
+}
+
+.choose-location-menu-2 p {
+    color: #CF6C2A;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.choose-location-menu-2 p a:hover {
+    text-decoration: underline;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #682d03;
+    margin: 30px;
+}
+
+/*******************************************************************/
+/************************MENU SLIDER SECTION************************/
+/*******************************************************************/
+
+.menu-section {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 12px 70px;
+    border-radius: 8px;
+    width: fit-content;
+    margin: 40px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.menu-section a{
+    text-decoration: none;
+    color: #CF6C2A;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.menu-section a:hover,
+.menu-section a.active {
+    color: #45240D;
+}
+
+/***************************************************************/
+/************************TORONTO SECTION************************/
+/***************************************************************/
+
+#toronto {
+    display: none;
+}
+
+.active-section {
+    display: flex;
+}
+
+.hide-section {
+    display: none;
+}
+
+.toronto {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    align-items: center;
+}
+
+.toronto h2 {
+    font-size: 42px;
+    font-weight: 800;
+    padding: 20px;
+    color: #000;
+}
+
+.toronto-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+}
+
+/***************************************************************/
+/**********************SCARBOROUGH SECTION**********************/
+/***************************************************************/
+
+#scarborough {
+    display: none;
+}
+
+.active-section {
+    display: flex;
+}
+
+.hide-section {
+    display: none;
+}
+
+.scarborough {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    align-items: center;
+}
+
+.scarborough h2 {
+    font-size: 42px;
+    font-weight: 800;
+    padding: 20px;
+    color: #000;
+}
+
+.scarborough-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+}
+
+/**********************************************************/
+/********************** SPECIAL MENU **********************/
+/**********************************************************/
+
+.special-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.special-menu .food-option {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 40px 50px;
+}
+
+.special-menu .food-option .food-card-1 {
+    display: flex;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: 180px;
+    padding: 10px;
+}
+
+.special-menu .food-option .food-card-extend {
+    display: flex;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: 180px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.special-menu .food-card-1 img,
+.special-menu .food-card-extend img{
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.special-menu .food-card-1 .food-text,
+.special-menu .food-card-extend .food-text {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.special-menu .food-card-1 h5,
+.special-menu .food-card-extend h5{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.special-menu .food-card-1 p,
+.special-menu .food-card-extend p{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.55);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/*********************************************************/
+/**********************REGULAR MENU **********************/
+/*********************************************************/
+
+#scarborough-regular-menu {
+    display: none;
+}
+
+#toronto-regular-menu{
+    display: none;
+}
+
+.active-section {
+    display: flex;
+}
+
+.hide-section {
+    display: none;
+}
+
+.regular-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding: 0 40px;
+}
+
+.regular-menu p{
+    color: #45240D;
+    width: 100%;
+    padding: 0 40px 40px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.regular-menu h2{
+    font-size: 42px;
+    font-weight: 800;
+    padding: 20px;
+    color: #000;
+}
+
+.regular-menu .food-option-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 40px;
+}
+
+.regular-menu .food-option-2 h3{
+    font-size: 28px;
+    font-weight: 600;
+    padding: 0 0 30px;
+    color: #000;
+    width: 100%;
+}
+
+/* appertizer */
+
+.regular-menu .food-option-2 .appertizer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    width: 100%;
+    padding: 0 0 40px 0; /*top right bot left*/
+}
+
+.regular-menu .food-option-2 .appertizer .food-card-2 {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: 360px;
+    padding: 8px;
+}
+
+.regular-menu .food-option-2 .appertizer .food-card-2 img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.regular-menu .food-option-2 .appertizer .food-card-2 .food-text {
+    padding: 15px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.regular-menu .food-option-2 .appertizer .food-card-2 .food-text h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.regular-menu .food-option-2 .appertizer .food-card-2 .food-text p {
+    width: 100%;
+    padding: 8px 0 0 0;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.55);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* soup */
+
+.regular-menu .food-option-2 .soup {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    width: 100%;
+    padding: 0 0 40px 0; /*top right bot left*/
+}
+
+.regular-menu .food-option-2 .soup .food-card-2 {
+    display: flex;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: 200px;
+    padding: 10px;
+}
+
+.regular-menu .food-option-2 .soup .food-card-2 img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.regular-menu .food-option-2 .soup .food-card-2 .food-text {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.regular-menu .food-option-2 .soup .food-card-2 .food-text h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.regular-menu .food-option-2 .soup .food-card-2 .food-text p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.55);
+    font-weight: 500;
+    padding: 8px 0 0 0;
+}
+
+.regular-menu .food-option-2 .soup .food-card-2 .food-text .more-option-and-price p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 700;
+}
+
+/* salad */
+
+.regular-menu .food-option-2 .salad {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    width: 100%;
+    padding: 0 0 40px 0; /*top right bot left*/
+}
+
+.regular-menu .food-option-2 .salad .food-card-2 {
+    display: flex;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: 180px;
+    padding: 10px;
+}
+
+.regular-menu .food-option-2 .salad .food-card-2 img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.regular-menu .food-option-2 .salad .food-card-2 .food-text {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.regular-menu .food-option-2 .salad .food-card-2 .food-text h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.regular-menu .food-option-2 .salad .food-card-2 .food-text p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.55);
+    font-weight: 500;
+    padding: 8px 0 0 0;
+}
+
+/* curry */
+
+.regular-menu .food-option-2 .curry {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    width: 100%;
+    padding: 0 0 40px 0; /*top right bot left*/
+}
+
+.regular-menu .food-option-2 .curry .food-card-2 {
+    display: flex;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: 200px;
+    padding: 10px;
+}
+
+.regular-menu .food-option-2 .curry .food-card-2 img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.regular-menu .food-option-2 .curry .food-card-2 .food-text {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.regular-menu .food-option-2 .curry .food-card-2 .food-text h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.regular-menu .food-option-2 .curry .food-card-2 .food-text p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.55);
+    font-weight: 500;
+    padding: 8px 0 0 0;
+}
+
+.regular-menu .food-option-2 .curry .food-card-2 .food-text .more-option-and-price p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 700;
+}
+
+/* hot plate */
+
+.regular-menu .food-option-2 .hot-plate {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    width: 100%;
+    padding: 0 0 40px 0; /*top right bot left*/
+}
+
+.regular-menu .food-option-2 .hot-plate .food-card-2 {
+    display: flex;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: 180px;
+    padding: 10px;
+}
+
+.regular-menu .food-option-2 .hot-plate .food-card-2 img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.regular-menu .food-option-2 .hot-plate .food-card-2 .food-text {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.regular-menu .food-option-2 .hot-plate .food-card-2 .food-text h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.regular-menu .food-option-2 .hot-plate .food-card-2 .food-text p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.55);
+    font-weight: 500;
+    padding: 8px 0 0 0;
+}
+
+/* rice */
+
+.regular-menu .food-option-2 .rice {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    width: 100%;
+    padding: 0 0 40px 0; /*top right bot left*/
+}
+
+.regular-menu .food-option-2 .rice .food-card-2 {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: 400px;
+    padding: 8px;
+}
+
+.regular-menu .food-option-2 .rice .food-card-2 img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.regular-menu .food-option-2 .rice .food-card-2 .food-text {
+    padding: 15px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.regular-menu .food-option-2 .rice .food-card-2 .food-text h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.regular-menu .food-option-2 .rice .food-card-2 .food-text p {
+    width: 100%;
+    padding: 8px 0 0 0;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.55);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.regular-menu .food-option-2 .rice .food-card-2 .food-text .more-option-and-price p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 700;
+}
+
+/* noodle */
+
+.regular-menu .food-option-2 .noodle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    width: 100%;
+    padding: 0 0 40px 0; /*top right bot left*/
+}
+
+.regular-menu .food-option-2 .noodle .food-card-2 {
+    display: flex;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: 215px;
+    padding: 10px;
+}
+
+.regular-menu .food-option-2 .noodle .food-card-2 img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.regular-menu .food-option-2 .noodle .food-card-2 .food-text {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.regular-menu .food-option-2 .noodle .food-card-2 .food-text h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.regular-menu .food-option-2 .noodle .food-card-2 .food-text p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.55);
+    font-weight: 500;
+    padding: 8px 0 0 0;
+}
+
+.regular-menu .food-option-2 .noodle .food-card-2 .food-text .more-option-and-price p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 700;
+}
+
+/* southern thai */
+
+.regular-menu .food-option-2 .southern-thai {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    width: 100%;
+    padding: 0 0 40px 0; /*top right bot left*/
+}
+
+.regular-menu .food-option-2 .southern-thai .food-card-2 {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: 380px;
+    padding: 8px;
+}
+
+.regular-menu .food-option-2 .southern-thai .food-card-2 img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.regular-menu .food-option-2 .southern-thai .food-card-2 .food-text {
+    padding: 15px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.regular-menu .food-option-2 .southern-thai .food-card-2 .food-text h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.regular-menu .food-option-2 .southern-thai .food-card-2 .food-text p {
+    width: 100%;
+    padding: 8px 0 0 0;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.55);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.regular-menu .food-option-2 .southern-thai .food-card-2 .food-text .more-option-and-price p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 700;
+}
+
+/* chef special */
+
+.regular-menu .food-option-2 .chef-special {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    width: 100%;
+    padding: 0 0 40px 0; /*top right bot left*/
+}
+
+.regular-menu .food-option-2 .chef-special .food-card-2 {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: 360px;
+    padding: 8px;
+}
+
+.regular-menu .food-option-2 .chef-special .food-card-2 img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.regular-menu .food-option-2 .chef-special .food-card-2 .food-text {
+    padding: 15px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.regular-menu .food-option-2 .chef-special .food-card-2 .food-text h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.regular-menu .food-option-2 .chef-special .food-card-2 .food-text p {
+    width: 100%;
+    padding: 8px 0 0 0;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.55);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* side dish */
+
+.regular-menu .food-option-2 .side-dish {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 0 40px 0;    /*top right bot left*/
+}
+
+.regular-menu .food-option-2 .side-dish .side-dish-item {
+    display: flex;
+    width: 100%;
+    align-items: baseline;
+    padding: 0 0 14px 0;
+}
+
+.regular-menu .food-option-2 .side-dish .side-dish-item span{
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.regular-menu .food-option-2 .side-dish .side-dish-item .dots{
+    flex-grow: 1;
+    border-bottom: 2px dotted #c07a45; /* Đường chấm màu nâu cam */
+    margin: 0 10px;
+    height: 1px;
+}
+
+/* regular dessert*/
+
+.regular-menu .food-option-2 .regular-dessert {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    width: 100%;
+    padding: 0 0 40px 0; /*top right bot left*/
+}
+
+.regular-menu .food-option-2 .regular-dessert .food-card-2 {
+    display: flex;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: 180px;
+    padding: 10px;
+}
+
+.regular-menu .food-option-2 .regular-dessert .food-card-2 img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.regular-menu .food-option-2 .regular-dessert .food-card-2 .food-text {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.regular-menu .food-option-2 .regular-dessert .food-card-2 .food-text h5 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.regular-menu .food-option-2 .regular-dessert .food-card-2 .food-text p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.55);
+    font-weight: 500;
+    padding: 8px 0 0 0;
+}
+
+/*******************************************************/
+/********************** THAI MENU **********************/
+/*******************************************************/
+
+#keto {
+    display: none;
+}
+
+.active-section {
+    display: flex;
+}
+
+.hide-section {
+    display: none;
+}
+.keto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.keto .food-option {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 40px 50px;
+}
+
+.keto .food-option .food-card-1 {
+    display: flex;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: 180px;
+    padding: 10px;
+}
+
+.keto .food-card-1 img{
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.keto .food-card-1 .food-text {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.keto .food-card-1 h5{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.keto .food-card-1 p{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.55);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/*********************************************************/
+/********************** DRINKS MENU **********************/
+/*********************************************************/
+
+#scarborough-drinks-menu {
+    display: none;
+}
+
+#toronto-drinks-menu {
+    display: none;
+}
+
+.active-section {
+    display: flex;
+}
+
+.hide-section {
+    display: none;
+}
+
+.drinks-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding: 0 40px;
+}
+
+.drinks-menu h2 {
+    font-size: 42px;
+    font-weight: 800;
+    padding: 20px;
+    color: #000;
+}
+
+.drinks-menu .drinks-list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 40px;
+}
+
+.drinks-menu .drinks-list h3{
+    font-size: 28px;
+    font-weight: 600;
+    padding: 0 0 30px;
+    color: #000;
+    width: 100%;
+}
+
+/* popular drinks */
+
+.drinks-menu .drinks-list .popular-drinks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    width: 100%;
+    padding: 0 0 50px 0;
+}
+
+.drinks-menu .drinks-list .popular-drinks .food-card-1 {
+    display: flex;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: 180px;
+    padding: 10px;
+}
+
+.drinks-menu .drinks-list .popular-drinks .food-card-1 img{
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.drinks-menu .drinks-list .popular-drinks .food-card-1 .food-text {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.drinks-menu .drinks-list .popular-drinks .food-card-1 h5{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.drinks-menu .drinks-list .popular-drinks .food-card-1 p{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.55);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* normal drinks */
+
+.drinks-menu .drinks-list .rum,
+.drinks-menu .drinks-list .vodka,
+.drinks-menu .drinks-list .gin,
+.drinks-menu .drinks-list .tequila-mezcal,
+.drinks-menu .drinks-list .whisky-bourbon,
+.drinks-menu .drinks-list .pitcher,
+.drinks-menu .drinks-list .spirit,
+.drinks-menu .drinks-list .low-abv,
+.drinks-menu .drinks-list .mocktails,
+.drinks-menu .drinks-list .alcohol,
+.drinks-menu .drinks-list .wines
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 0 20px 0;
+}
+
+.drinks-menu .drinks-list .list-item{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 0 20px 0;
+}
+
+.drinks-menu .drinks-list .list-item .item-header {
+    display: flex;
+    width: 100%;
+    align-items: baseline;
+} 
+
+.drinks-menu .drinks-list .list-item span{
+    font-size: 18px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.drinks-menu .drinks-list .list-item .dots{
+    flex-grow: 1;
+    border-bottom: 2px dotted #c07a45; 
+    margin: 0 10px;
+    height: 1px;
+}
+
+.drinks-menu .drinks-list .list-item p{
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/***********************************************************/
+/********************** DESSERTS MENU **********************/
+/***********************************************************/
+
+#scarborough-desserts-menu {
+    display: none;
+}
+
+#toronro-desserts-menu {
+    display: none;
+}
+
+.active-section {
+    display: flex;
+}
+
+.hide-section {
+    display: none;
+}
+
+.desserts-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desserts-menu .food-option {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 40px 50px;
+}
+
+.desserts-menu .food-option .food-card-1 {
+    display: flex;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: 180px;
+    padding: 10px;
+}
+
+.desserts-menu .food-card-1 img{
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.desserts-menu .food-card-1 .food-text {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.desserts-menu .food-card-1 h5{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.desserts-menu .food-card-1 p{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.55);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/**************************************************************/
+/************************FOOTER SECTION************************/
+/**************************************************************/
+
+.footer {
+    background: #E2C799;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    width: 100vw;
+}
+
+.footer .information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    color:#682d03;
+}
+
+.information p {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.information a {
+    color: #682d03;
+    text-decoration: underline;
+}
+
+/**********************************************************/
+/************************RESPONSIVE************************/
+/**********************************************************/
+
+@media screen and (max-width: 800px) {
+
+    /* header */
+    header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* navigation */
+    .nav-bar {
+        padding: 0 10px;
+    }
+    
+    .nav-bar .logo {
+        width: 140px;
+    }
+
+    /* address bar */
+    .address-bar p {
+        font-size: 14px; 
+        text-align: center;
+    }
+
+    /* reservation */
+    .reservation-bar .rev-ctn {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .calendar {
+        width: 100%;
+        max-width: 370px;
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+
+    .calendar .weekday {
+        gap: 0;
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .calendar .dates {
+        gap: 0;
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .rev-ctn .rev-info {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .location-options .loc-btn, 
+    .time .select-time, 
+    .people .select-people,
+    .confirmation {
+        width: 370px;
+    }
+
+    /* quote */
+    .quote h2 {
+        font-size: 20px;
+        padding: 0 0 30px 0;
+    }
+
+    /* special menu */
+    .scarborough, 
+    .toronto {
+        padding: 0;
+    }
+
+    .scarborough h2, 
+    .toronto h2{
+        font-size: 32px;
+    }
+
+    .scarborough-menu .menu-section, 
+    .toronto-menu .menu-section {
+        padding: 10px 40px 10px 40px;
+    }
+
+    .scarborough-menu .menu-section a, 
+    .toronto-menu .menu-section a{
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .special-menu {
+        font-size: 24px;
+    }
+
+    .special-menu .food-option {
+        grid-template-columns: 1fr;
+    }
+
+    .special-menu .food-card-1,
+    .special-menu .food-card-extend {
+        height: auto; 
+    }
+
+    .special-menu .food-card-1 h5, 
+    .special-menu .food-option .food-card-extend h5{
+        font-size: 16px;
+    }
+
+    .special-menu .food-option .food-card-extend {
+        height: 240px;
+        padding: 10px;
+        overflow-y: auto;
+    }
+
+    /* regular menu */
+    .regular-menu .food-option-2 .appertizer,
+    .regular-menu .food-option-2 .rice,
+    .regular-menu .food-option-2 .southern-thai,
+    .regular-menu .food-option-2 .chef-special {
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 12px;
+        gap: 15px;
+    }
+
+    .regular-menu .food-option-2 .soup,
+    .regular-menu .food-option-2 .salad,
+    .regular-menu .food-option-2 .curry,
+    .regular-menu .food-option-2 .hot-plate,
+    .regular-menu .food-option-2 .noodle,
+    .regular-menu .food-option-2 .regular-dessert {
+        grid-template-columns: 1fr; 
+    }
+
+    .regular-menu {
+        padding: 0 15px;
+    }
+
+    /* keto menu */
+    .keto .food-option{
+        grid-template-columns: 1fr;
+    }
+    /* drinks menu */
+    .drinks-menu .drinks-list .item-header span,
+    .drinks-menu .drinks-list .list-item p{
+        font-size: 14px;
+    }
+    .drinks-menu .drinks-list .popular-drinks {
+        grid-template-columns: 1fr;
+        padding: 0 0 30px 0;
+    }
+
+    /* desserts menu */
+    .desserts-menu {
+        font-size: 24px;
+    }
+
+    .desserts-menu .food-option {
+        grid-template-columns: 1fr;
+    }
+
+    .desserts-menu .food-card-1 {
+        height: auto; 
+    }
+
+    .dessert-menu .food-card-1 h5{
+        font-size: 16px;
+    }
+
+    /* footer */
+    .footer p {
+        font-size: 14px;
+        padding: 0 0 10px 0;
+    }
+
+}

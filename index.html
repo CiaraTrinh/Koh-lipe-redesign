@@ -1,0 +1,2588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="./image/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet">
+    <title>Koh Lipe</title>
+</head>
+
+<body>
+    <!---Header section-->
+    <header>
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="./image/koh-lipe-logo.png" alt="Koh Lipe Logo">
+            </div>
+            <ul class="nav-links">
+                <a href="#home-page">HOME</a>
+                <a href="#menu-page">MENU</a>
+            </ul>
+            <!--<ion-icon name="menu-outline" class="menu-btn"></ion-icon>-->
+        </div>
+    </header>
+
+    <!---Badges section-->
+    <div class="michelin-badge">
+        <div class="michelin-ctn">
+            <div class="badge"><p>MICHELIN</p>2022</div>
+            <div class="badge"><p>MICHELIN</p>2023</div>
+            <div class="badge"><p>MICHELIN</p>2024</div>
+            <div class="badge"><p>MICHELIN</p>2025</div>
+        </div>
+    </div>
+
+    <!---Address section--->
+    <div class="address-bar">
+        <p>35 Baldwin St. Toronto | 4675 Steeles Ave E, Scarborough<p>
+    </div>
+
+    <!--=========================================== HOME ===========================================-->
+
+    <!---Reservation section--->
+    <div class="reservation-bar" id="home-page">
+        <h2>Reservation require</h2>
+        <div class="rev-ctn">
+            <div class="calendar">
+                <!--header of the calendar-->
+                <div class="heading">
+                    <button id="prevBtn">
+                        <ion-icon name="chevron-back-outline"></ion-icon>
+                    </button>
+
+                    <div class="monthYear" id="monthYear"></div>
+
+                    <button id="nextBtn">
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </button>
+                </div>
+
+                <!--weekday in calendar-->
+                <div class="weekday">
+                    <div class="day">Mon</div>
+                    <div class="day">Tue</div>
+                    <div class="day">Wed</div>
+                    <div class="day">Thu</div>
+                    <div class="day">Fri</div>
+                    <div class="day">Sat</div>
+                    <div class="day">Sun</div>
+                </div>
+
+                <!--date in a week-->
+                <div class="dates" id="dates"></div>
+            </div>
+
+            <div class="rev-info">
+                <h3>Location</h3>
+                <div class="location-options">
+                    <button class="loc-btn">Koh Lipe Thai - Downtown</button>
+                    <button class="loc-btn">Koh Lipe Thai - Scarborough</button>
+                </div>
+
+                <h3>Time</h3>
+                <div class="time">
+                    <div class="select-time">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <select>
+                            <option>09:00</option>
+                            <option>10:00</option>
+                            <option>11:00</option>
+                            <option>12:00</option>
+                            <option>01:00</option>
+                            <option>02:00</option>
+                            <option>03:00</option>
+                        </select>
+                    </div>
+                </div>
+
+                <h3>Quantity</h3>
+                <div class="people">
+                    <div class="select-people">
+                        <ion-icon name="people-outline"></ion-icon>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button class="confirmation">Confirm</button>
+                
+            </div>
+        </div>
+    </div>
+
+    <!---Quote section--->
+    <div class="quote" id="quote">
+        <h2>"We strongly believed that Koh Lipe is not only best Thai restaurant in Toronto but alse we are one and only Southern Thai Cuisine in North America "Michelin Guide Canada"</h2>
+    </div>
+
+    <!--=========================================== MENU ===========================================-->
+
+    <!---Choose a menu location section-->
+    <div class="choose-location" id="menu-page">
+        <h2>Choose a location</h2>
+        <div class="choose-location-menu">
+            <div class="choose-location-menu-2">
+                <a class="addr-1" href="#toronto">35 Baldwin St, Toronto, ON M5T 1L1</a>
+                <p>
+                    TEL: <a href="tel: 9999999999">(999) 999-9999</a>
+                    Email: <a href="mailto: examples@gmail.com">examples@gmail.com</a>
+                </p>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="choose-location-menu-2">
+                <a class="addr-1" href="#scarborough">4675 Steeles Ave E, Scarborough, ON M1V 0B7</a>
+                <p>
+                    TEL: <a href="tel: 9999999999">(999) 999-9999</a>
+                    Email: <a href="mailto: examples@gmail.com">examples@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--======================================= TORONTO MENU =======================================-->
+
+    <div class="toronto" id="toronto">
+        <div class="toronto-menu" id="toronto-menu">
+            <ul class="menu-section">
+                <a href="#toronto-special-menu" class="active">Special Menu</a>
+                <a href="#toronto-regular-menu">Regular Menu</a>
+                <a href="#toronto-keto-menu">Keto</a>
+                <a href="#toronto-drinks-menu">Drinks</a>
+                <a href="#toronto-desserts-menu">Desserts</a>
+            </ul>
+
+            <!---toronto special menu--->
+
+            <div class="special-menu" id="toronto-special-menu">
+                <h2>SPECIAL MENU</h2>
+
+                <div class="food-option">
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/DSC00084-768x768.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Hor Mok Roulade $16.95</h5>
+                            <p>Steamed curry custard with Basa fish fillet, Salmon roe</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/DSC01401-768x768.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Salad Khaek $12.95 (Vegan)</h5>
+                            <p>Iceberg lettuce, cherry tomato, peanut sauce, rice crumble</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/DSC01391-768x768.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Mor Kao Mor Kaeng Ling $14.95 (Vegan)</h5>
+                            <p>Coconut sticky rice, zucchini blossom, peanut sauce, pickles</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/DSC00141-768x576.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Khao Pad Puu $25.95</h5>
+                            <p>Crab fried rice, egg, onion and served with spicy fish sauce</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/DSC00136-1-768x768.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Mee Puu $27.95</h5>
+                            <p>Blue crab curry with vermicelli, shrimp paste, chilli and betel leaves</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/LIPE-Baldwin-96-1-768x768.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Kob Kamin $16.95</h5>
+                            <p>Deep fried frog legs with turmeric root, fresh garlic and serve with chilli sauce</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/LIPE-Baldwin-88-768x768.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Pad Mee $24.95 (spicy)</h5>
+                            <p>Southern Thai Style Pad Thai, with vermicelli, shrimp paste, chilli, bean sprouts, chive, onion, peanut shrimps</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/LIPE-Baldwin-93-768x768.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Goong Moun $16.95 (spicy)</h5>
+                            <p>Fried crispy skin tofu rolled with shrimp, carrot, chilli, betel leaf and served with Arjard sauce</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/LIPE-Baldwin-77-768x768.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Khao Pad Pla $27.95 (spicy)</h5>
+                            <p>Fried rice with mackerel fish. egg, onion, carrot, lemongrass and topped with kastuobushi flakes</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/LIPE-Baldwin-83-768x768.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Khao Neow Gaeng $25.95 (spicy)</h5>
+                            <p>Stir-Fried Pineapple curry chicken,  Served with coconut curry sticky rice.</p>
+                            <p style="color: rgba(0, 0, 0, 1.0); padding: 10px 0 0 0;">Shrimp $27.95</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/LIPE-Baldwin-90-768x768.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Kor Moo Gaeng Kua $25.95 (spicy)</h5>
+                            <p>Coconut curry with pork jowl, Thai acacia, baby eggplant, betel leaves</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-extend">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/LIPE-Baldwin-92-768x768.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Gaeng Gai Khao Mun $24.95 (spicy)</h5>
+                            <p>The unique local dish from Songkhla province. Dried chicken curry with coconut rice (butterfly pea flower) and topped with shrimps, dry fish Anchovies, egg, onion, long bean and homemade chilli tamarind paste</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---toronto regular menu--->
+
+            <div class="regular-menu" id="toronto-regular-menu">
+                <p>
+                    <b>Spicy Level:</b> Mild, Medium, Spicy, or Extra Spicy <br>
+                    Please let us know if you have any <b>allergies or dietary</b> restrictions. <br>
+                    <b>18%</b> Gratuity may be added to party of 5 or more. <br>
+                    A plating fee of <b>$4/head</b> will be charged for outside food/drinks.
+                </p>
+
+                <h2>REGULAR MENU</h2>
+
+                <div class="food-option-2">
+
+                    <!--Appertizer menu-->
+                    <h3>APPERTIZER</h3>
+                    <div class="appertizer">
+                        <div class="food-card-2">
+                            <img src="https://www.urban-thai.com/wp-content/uploads/2013/09/0719-Urban-Thai2721.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Poh Pia Tod $8.95</h5>
+                                <p>Veggies spring rolls served with plum sauce</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2023/04/295853742_740365103914062_5677654467086800012_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Gai Gor Lae $14.95</h5>
+                                <p>Grilled chicken with coconut curry sauce</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/96427101_107930654126731_7523707107542790330_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Peek Gai Tom Yum $16.95</h5>
+                                <p>Fried chicken wings with Tom Yum flavour</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/73097199_2152017355101883_5504228312909884246_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Muek Yang $16.95</h5>
+                                <p>Grilled squid served with chilli lime sauce</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/IMG_78332.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Geow Goong $14.50</h5>
+                                <p>Steamed shrimp dumpling with garlic oil, served with chilli lime sauce</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2023/04/317189452_505865984840045_4889177622157846654_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Moo Tod $16.50</h5>
+                                <p>Fried pork belly served with chilli lime sauce</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/IMG_8440-scaled.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Gai Tod Hat Yai $16.50</h5>
+                                <p>Southern Thailand fried chicken with onion served with plum sauce</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Soup menu-->
+                    <h3>SOUP</h3>
+                    <div class="soup">
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/osafas6.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Tom Yum (spicy)</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                                <div class="more-option-and-price">
+                                    <p>
+                                        Veggies Tofu $9.95<br>
+                                        Chicken $10.95<br>
+                                        Shrimp $13.95
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/oghdfty7.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Tom Kha</h5>
+                                <p>Coconut soup with tomatoes, mushroom and onion</p>
+                                <div class="more-option-and-price">
+                                    <p>
+                                        Veggies Tofu $9.95<br>
+                                        Chicken $10.95<br>
+                                        Shrimp $13.95
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Salad menu-->
+                    <h3>SALAD</h3>
+                    <div class="salad">
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/74665254_2452097551565343_3766755125839268103_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Pla Goong $17.95</h5>
+                                <p>Lemongrass salad with shrimp, onion, mint and chilli</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/fdgsdr6565.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Yum Ma Muang $14.95</h5>
+                                <p>Mango Salad with onion and peanut</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---Curry menu--->
+                    <h3>CURRY</h3>
+                    <div class="curry">
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2023/04/317360929_1091196538121031_5101115189182371241_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Gaeng Keow Whan (spicy)</h5>
+                                <p>Green curry with bamboo shoot</p>
+                                <div class="more-option-and-price">
+                                    <p>
+                                        Veggies Tofu $20.95<br>
+                                        Chicken $22.95
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2023/04/308870311_3399097637082725_7876786622206737750_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Mas Sa Man</h5>
+                                <p>Tamarind coconut red curry, peanut, and potato</p>
+                                <div class="more-option-and-price">
+                                    <p>
+                                        Veggies Tofu $20.95<br>
+                                        Chicken $22.95
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---Hot plate menu--->
+                    <h3>HOT PLATE</h3>
+                    <div class="hot-plate">
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/115474078_1177794005909950_7330503128353989104_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Koong Ob Woonsen $28.95</h5>
+                                <p>Steamed glass noodle with shrimp, Napa, ginger and Chinese celery served with chilli lime sauce</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2023/04/327019199_1220111525530779_8380117215948720_n-edited.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Khao Pad Pla $27.95</h5>
+                                <p>Fried rice with mackerel fish. egg, onion, carrot, lemongrass and topped with kastuobushi flakes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---Rice menu--->
+                    <h3>RICE</h3>
+                    <div class="rice">
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/67238455_2945880182121082_9010505814960935660_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Pad Gra Prao (spicy)</h5>
+                                <p>Holy basil, onion, and chilli topped with fried egg</p>
+                                <div class="more-option-and-price">
+                                    <p>
+                                        Minced Chicken $21.95<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2023/04/Screen-Shot-2023-04-04-at-1.04.43-AM-e1680584767571.png" alt="food image">
+                            <div class="food-text">
+                                <h5>Pad Gra Prao (spicy)</h5>
+                                <p>Holy basil, onion, and chilli topped with fried egg</p>
+                                <div class="more-option-and-price">
+                                    <p>
+                                        Crispy Pork $21.95<br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/93259527_317000475935101_1252012325884495329_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Khao Pad</h5>
+                                <p>Pineapple fried rice, curry powder, egg, onion, and green pea</p>
+                                <div class="more-option-and-price">
+                                    <p>
+                                        Veggies Tofu $20.95<br>
+                                        Chicken $22.95<br>
+                                        Shrimp $24.95
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/82550362_112372220301513_8414360179004246294_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Pad Ka Na (spicy) </h5>
+                                <p>Chinese broccoli with garlic, onion and chilli</p>
+                                <div class="more-option-and-price">
+                                    <p>
+                                        Tofu $19.95<br>
+                                        Crispy Pork $23.95
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---Noodle menu--->
+                    <h3>NOODLE</h3>
+                    <div class="noodle">
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/74534338_2409964872561826_8382332190985163488_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Pad Thai</h5>
+                                <p>Rice noodles, egg, tofu, bean sprouts, chives, tamarind sauce, and ground peanut</p>
+                                <div class="more-option-and-price">
+                                    <p>
+                                        Veggies Tofu $20.95<br>
+                                        Chicken $21.95<br>
+                                        Shrimp $24.95
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2023/04/337395534_184671594319948_594278718256569027_n-e1680586277496.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Pad Kee Mao (spicy)</h5>
+                                <p>Flat rice noodles, egg, chilli, green bean, basil, mushroom, and baby pepper corn</p>
+                                <div class="more-option-and-price">
+                                    <p>
+                                        Veggies Tofu $20.95<br>
+                                        Beef $22.95
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2023/04/326943116_844162756657297_4465837741099571660_n-e1680586782297.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Pad See Ew</h5>
+                                <p>Flat rice noodle, egg, Chinese broccoli, and soy sauce</p>
+                                <div class="more-option-and-price">
+                                    <p>
+                                        Veggies Tofu $20.95<br>
+                                        Chicken $21.95
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2023/04/Screen-Shot-2023-04-04-at-1.16.40-AM.png" alt="food image">
+                            <div class="food-text">
+                                <h5>Guey Tiew Khaek (Isalamic Noodle)</h5>
+                                <p>Rice noodle with boiled egg, peanut and red curry gravy</p>
+                                <div class="more-option-and-price">
+                                    <p>
+                                        Veggies Tofu $20.95<br>
+                                        Beef $22.95
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/59401042_805653106487253_3808141921802436782_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Khao Soi</h5>
+                                <p>Egg noodle with yellow curry, onion, cabbage and bean sprouts</p>
+                                <div class="more-option-and-price">
+                                    <p>
+                                        Veggies Tofu $20.95<br>
+                                        Braised Beef $22.95
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---Southern Thai menu--->
+                    <h3>SOUTHERN THAI</h3>
+                    <div class="southern-thai">
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/60418743_2661121043957855_8186653978103524497_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Gaeng Ka Ti Sa Tor Nua $25.95 (spicy)</h5>
+                                <p>Coconut green curry beef with plantain and stink bean</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2023/03/IMG_0904.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Choo Chee Pla Too $24.95 (spicy)</h5>
+                                <p>Fried mackerel fish topped with coconut curry</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/62015673_2314654825462531_5327463574846661866_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Ka Nom Jeen Gaeng Tai Pla 25.95 (spicy)</h5>
+                                <p>Rice noodles in fish curry with baby eggplant, bamboo shoots and green bean</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/89219523_138914777458275_4727632631202758293_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Gaeng Cha Plu 25.95 (spicy)</h5>
+                                <p>Coconut green curry mussels with betel leaf</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2023/04/310026480_517244343741748_6583761406630655881_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Gaeng Kua Moo $23.95 (spicy)</h5>
+                                <p>Pork ribs and ginger curry</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/retet.png" alt="food image">
+                            <div class="food-text">
+                                <h5>Pad Phed Sa Tor Koong $26.95 (spicy)</h5>
+                                <p>Stir-fried stink bean with shrimp and curry sauce</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/67637355_2789980714362705_8281662201219336563_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Ka Nom Jeen Nam Ya $24.95 (spicy) </h5>
+                                <p>Rice noodles in minced fish curry served with boiled egg, green bean, bean sprouts and cabbage</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="./image/food.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Kua Gling (spicy)</h5>
+                                <p>Stir-fried dried curry with lemongrass, kaffir lime leaves and topped with fried egg</p>
+                                <div class="more-option-and-price">
+                                    <p>
+                                        Minced Chicken $21.95<br>
+                                        Minced pork $21.95
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---Chef special menu--->
+                    <h3>CHEF SPECIAL</h3>
+                    <div class="chef-special">
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/79515709_454145205248949_355446166244613618_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Luok Jhim $36.95</h5>
+                                <p>Steamed shrimps, mussels, squid, fish served with chilli lime sauce</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2023/04/336958894_547170527503906_2370116314012169899_n-e1680586570275.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Prik Gaeng Moo Krob $26.95 (spicy)</h5>
+                                <p>Stir-Fried crispy pork with curry paste and green bean</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/82869760_477712719558046_4012060150525732828_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Prik Pao Talay $39.95</h5>
+                                <p>Stir-Fried smoked chilli platter, shrimps, mussels, squid, clams and basil</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!---Side dish menu--->
+                    <h3>SIDE DISH</h3>
+                    <div class="side-dish">
+                        <div class="side-dish-item">
+                            <span>Steamed Jasmine Rice</span>
+                            <div class="dots"></div>
+                            <span>$3.95</span>
+                        </div>
+
+                        <div class="side-dish-item">
+                            <span>Coconut Rice</span>
+                            <div class="dots"></div>
+                            <span>$4.50</span>
+                        </div>
+
+                        <div class="side-dish-item">
+                            <span>Coconut Sticky Rice</span>
+                            <div class="dots"></div>
+                            <span>$4.95</span>
+                        </div>
+
+                        <div class="side-dish-item">
+                            <span>Sticky Rice</span>
+                            <div class="dots"></div>
+                            <span>$4.50</span>
+                        </div>
+
+                        <div class="side-dish-item">
+                            <span>Steamed Noodle</span>
+                            <div class="dots"></div>
+                            <span>$4.50</span>
+                        </div>
+
+                        <div class="side-dish-item">
+                            <span>Fried Egg</span>
+                            <div class="dots"></div>
+                            <span>$2.50</span>
+                        </div>
+                    </div>
+
+                    <!---Desserts menu--->
+                    <h3>DESSERTS</h3>
+                    <div class="regular-dessert">
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2023/04/322770103_868456540855808_2773596717784764381_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Khao Neow Ma Muang $13.95</h5>
+                                <p>Mango coconut sticky rice</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2023/04/295887594_641047070286509_3407040733085433312_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Khao Neow Tu Rian $13.95</h5>
+                                <p>Durain coconut sticky rice</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---toronto keto menu--->
+
+            <div class="keto" id="toronto-keto-menu">
+                <h2>THAI KETO</h2>
+
+                <div class="food-option">
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2021/09/DSC00046-2-scaled.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Moo Tod $15.95</h5>
+                            <p style="color: rgba(0, 0, 0, 1.0);">Fried pork belly served with chilli lime sauce on the side</p>
+                            <p>[Calories: 1430 Fat: 81 g Carbs: 1 g Protein: 151 g]</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2021/09/73097199_2152017355101883_5504228312909884246_n.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Grilled Squid $15.95</h5>
+                            <p style="color: rgba(0, 0, 0, 1.0);">Grilled Squid served with chilli lime sauce on the side</p>
+                            <p>[Calories: 194 Fat: 2 g Carbs: 1 g Protein: 41 g]</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2023/03/pad-thai-keto-scaled-e1680185172857.jpeg" alt="food image">
+                        <div class="food-text">
+                            <h5>Pad Thai</h5>
+                            <p style="color: rgba(0, 0, 0, 1.0);">Stir-fried Konjac noodles with tamarind sauce, tofu and peanuts</p>
+                            <div class="more-option-and-price">
+                                <p>
+                                    Chicken $22.95<br>
+                                    Cripsy pork $23.95<br>
+                                    Shrimp $25.95
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2021/09/KPSH-scaled.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Curry Fried Rice</h5>
+                            <p style="color: rgba(0, 0, 0, 1.0);">Stir-fried Konjac rice mixed with Cauliflower Rice and curry powder, egg, and onion</p>
+                            <div class="more-option-and-price">
+                                <p>
+                                    Chicken $22.95<br>
+                                    Cripsy pork $23.95<br>
+                                    Shrimp $25.95
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2021/09/PKM-scaled.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Pad Kee Mao Beef $23.95</h5>
+                            <p style="color: rgba(0, 0, 0, 1.0);">Stir-fried Konjac noodles, eggs, chilli, green bean, basil, and baby pepper corn</p>
+                            <p>[Calories: 565 Fat: 43 g Carbs: 7 g Protein: 33 g]</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2021/09/DSC09994-2-scaled.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Green Curry Chicken $22.95</h5>
+                            <p style="color: rgba(0, 0, 0, 1.0);">Coconut green curry with bamboo shoots, chilli and served with Cauliflower rice</p>
+                            <p>[Calories: 674 Fat: 30 g Carbs: 8 g Protein: 45 g]</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1" style="height: 200px;">
+                        <img src="./image/food.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Pad Gra Prao</h5>
+                            <p style="color: rgba(0, 0, 0, 1.0);">Holy Basil, Minced Chicken, Onion, Chili and Topped with Fried Egg. Served with konjac rice mixed with Cauliflower rice.</p>
+                            <div class="more-option-and-price">
+                                <p>
+                                    Chicken $22.95<br>
+                                    Cripsy pork $23.95
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1" style="height: 200px;">
+                        <img src="./image/food.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Kua Gling</h5>
+                            <p style="color: rgba(0, 0, 0, 1.0);">Stir-Fried Dried Curry with Lemongrass, Kaffir Lime Leaves and Egg. Served with konjac rice mixed with Cauliflower rice</p>
+                            <div class="more-option-and-price">
+                                <p>
+                                    Chicken $22.95<br>
+                                    Pork $22.95
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2021/09/DSC09991-2-scaled.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Cauliflower Rice $4.95</h5>
+                            <p>[Calories: 62 Fat: 0 g Carbs: 3 g Protein: 0 g]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---toronto drinks menu--->
+
+            <div class="drinks-menu" id="toronto-drinks-menu">
+                <h2>DRINKS</h2>
+
+                <div class="drinks-list">
+
+                    <!--toronto popular drinks-->
+                    <div class="popular-drinks">
+                        <div class="food-card-1">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2023/03/S__37543947-edited-768x1025.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Thai Iced Green Tea $7.50</h5>
+                            </div>
+                        </div>
+
+                        <div class="food-card-1">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/pineapplebasil-768x1024.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Pineapple Mint Smoothie (1 litre for share) $17.95</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---toronto rum--->
+                    <div class="rum">
+                        <h3>RUM</h3>
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Tipsy Thai Tea</span>
+                                <div class="dots"></div>
+                                <span>$13.95</span>
+                            </div>
+                            <p>1.5 oz Dark Rum, Thai Iced Tea.</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Thai Tea Frizz</span>
+                                <div class="dots"></div>
+                                <span>$13.95</span>
+                            </div>
+                            <p>1.0 oz Dark Rum, 0.5 oz Peach Schnapps, Black Thai Tea, Lime Juice, Mints, Soda Water</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Mango-Licious</span>
+                                <div class="dots"></div>
+                                <span>$13.95</span>
+                            </div>
+                            <p>1.5 oz Coconut Rum, Mango Juice, Grenadine</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Lipe Mojito</span>
+                                <div class="dots"></div>
+                                <span>$14.50</span>
+                            </div>
+                            <p>1.5 oz Rum, Lemongrass Syrup, Lime Juice, Mint, Butterfly Pea Flower, Soda Water</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Pineappletini</span>
+                                <div class="dots"></div>
+                                <span>$13.95</span>
+                            </div>
+                            <p>0.5 oz Pineapple Rum, O.5 oz Coconut Rum, 0.5 oz Vodka, Pineapple Juice, Grenadine</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Pina Colada (Slush)</span>
+                                <div class="dots"></div>
+                                <span>$14.50</span>
+                            </div>
+                            <p>1.5 oz Coconut Rum, 0.5 oz Pineapple Rum, Coconut Cream, Pineapple Juice</p>
+                        </div>
+                    </div>
+
+                    <!---toronto vodka--->
+                    <div class="vodka">
+                        <h3>VODKA</h3>
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Lycheetini</span>
+                                <div class="dots"></div>
+                                <span>$13.95</span>
+                            </div>
+                            <p>1.5 oz Vodka, Lychee Juice, Grenadine</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Sex On The Beach</span>
+                                <div class="dots"></div>
+                                <span>$13.95</span>
+                            </div>
+                            <p>1 oz Vodka, 0.5 oz Peach Schnapps, Orange Juice, Cranberry Juice</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Coco Mango</span>
+                                <div class="dots"></div>
+                                <span>$14.50</span>
+                            </div>
+                            <p>0.75 oz Vodka infused Pandan, 0.5 oz Mango Vodka, 0.5 oz Rum Chata, Mango Juice, Coconut cream, Lime juice</p>
+                        </div>
+                    </div>
+
+                    <!---toronto gin--->
+                    <div class="gin">
+                        <h3>GIN</h3>
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Lipe Collins</span>
+                                <div class="dots"></div>
+                                <span>$16.95</span>
+                            </div>
+                            <p>1.5 oz Empress Gin, Lychee Juice, Mango Juice, Soda Water</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Straw-Basil Mojito</span>
+                                <div class="dots"></div>
+                                <span>$14.50</span>
+                            </div>
+                            <p>1.5 oz Strawberry Gin, Syrup, Lime Juice, Thai Basil, Strawberry, Soda Water</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>P&B Gin Tonic</span>
+                                <div class="dots"></div>
+                                <span>$14.50</span>
+                            </div>
+                            <p>1.5 oz Bombay Gin, Pineapple, Thai Basil, Sugarcane Sugar, Tonic Water</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Cocoa Negroni</span>
+                                <div class="dots"></div>
+                                <span>$16.50</span>
+                            </div>
+                            <p>1 oz. Strawberry Gin, 1 oz. Campari, 0.75 oz Sweet Vermouth, 0.25 oz Cream de Cocoa</p>
+                        </div>
+                    </div>
+
+                    <!---toronto tequila/mezcal--->
+                    <div class="tequila-mezcal">
+                        <h3>TEQUILA/MEZCAL</h3>
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Blue Margarita (slush)</span>
+                                <div class="dots"></div>
+                                <span>$14.95</span>
+                            </div>
+                            <p>1.0 oz Blanco Tequila, 1.0 oz Blue Curacao, Lime Juice</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Tequila Sunrise</span>
+                                <div class="dots"></div>
+                                <span>$13.95</span>
+                            </div>
+                            <p>1.5 oz Blanco Tequila, Orange Juice, Grenadine</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Smokey Negroni</span>
+                                <div class="dots"></div>
+                                <span>$17.95</span>
+                            </div>
+                            <p>1 oz. Mezcal, 0.5 Blanco Vermont, 0.25 oz, Campari infused Thai Tea</p>
+                        </div>
+                    </div>
+
+                    <!---toronto whisky/bourbon--->
+                    <div class="whisky-bourbon">
+                        <h3>WHISKY/BOURBON</h3>
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Toronto</span>
+                                <div class="dots"></div>
+                                <span>$16.50</span>
+                            </div>
+                            <p>2 oz Canadian Whisky, 0.25 oz Fernet Branca, 0.25 oz Maple Syrup, Angostura Bitter</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Manhattan Blanco</span>
+                                <div class="dots"></div>
+                                <span>$16.50</span>
+                            </div>
+                            <p>1.5 oz Bourbon, 1.5 oz Blanco Vermouth, Lemon peel, Orange bitter</p>
+                        </div>
+                    </div>
+
+                    <!---toronto pitcher--->
+                    <div class="pitcher">
+                        <h3>PITCHER</h3>
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Spicy-M Sangria</span>
+                                <div class="dots"></div>
+                                <span>$45.00</span>
+                            </div>
+                            <p>8.0 oz White Wine, 1.5 oz Vodka, 1 oz Triple Sec, Mango Juice,Coconut syrup, Holy Basil, Mango, Red Chili, Ginger Ale</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Emerald Cave</span>
+                                <div class="dots"></div>
+                                <span>$45.00</span>
+                            </div>
+                            <p>Dark Rum 3 oz., Vodka 2 oz, Blue Curacao 1.5 oz, Red bull, Lime Juice, Lemongrass syrup, Pineapple Juice, Lychee Juice, Lychee, Mints, Sprite</p>
+                        </div>
+                    </div>
+
+                    <!---toronto other spirit--->
+                    <div class="spirit">
+                        <h3>OTHER SPIRIT</h3>
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Mark’s Mark Bourbon</span>
+                                <div class="dots"></div>
+                                <span>$10.95</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Jameson Irish Whiskey</span>
+                                <div class="dots"></div>
+                                <span>$9.95</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Lot No.40 Dark Oak Canadian Whisky</span>
+                                <div class="dots"></div>
+                                <span>$10.95</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Espolon Reposado Tequila</span>
+                                <div class="dots"></div>
+                                <span>$10.95</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Sombra Joven Mezcal</span>
+                                <div class="dots"></div>
+                                <span>$14.95</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Empress Gin</span>
+                                <div class="dots"></div>
+                                <span>$10.95</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Tanqueray Gin</span>
+                                <div class="dots"></div>
+                                <span>$8.95</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Appleton Estate Reserve 8 Years</span>
+                                <div class="dots"></div>
+                                <span>$9.95</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Gosling Bermuda Black Seal Rum</span>
+                                <div class="dots"></div>
+                                <span>$8.95</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---toronto low abv--->
+                    <div class="low-abv">
+                        <h3>LOW ABV</h3>
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Little Fishbowl (Low ABV)</span>
+                                <div class="dots"></div>
+                                <span>$13.95</span>
+                            </div>
+                            <p>2.0 oz Hypnotic , 2 oz White Wine, 0.25 oz Blue Curacao , Ginger Ale</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Keep it cool (Low ABV)</span>
+                                <div class="dots"></div>
+                                <span>$13.95</span>
+                            </div>
+                            <p>2 oz. Rosso Vermouth, 0.5 oz Dark Rum, Cranberry Juice, Syrup, Lemon wheel, Soda water</p>
+                        </div>
+                    </div>
+
+                    <!---toronto mocktails--->
+                    <div class="mocktails">
+                        <h3>MOCKTAILS</h3>
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Sunny Smile </span>
+                                <div class="dots"></div>
+                                <span>$10.50</span>
+                            </div>
+                            <p>Pineapple Juice, Orange Juice, Lime juice, Syrup, Soda Water</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Jas-mi-peach</span>
+                                <div class="dots"></div>
+                                <span>$10.50</span>
+                            </div>
+                            <p>Peach Juice, Jasmin Syrup, Lime Juice, Soda Water</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Juice Mango | Lychee</span>
+                                <div class="dots"></div>
+                                <span>$7.50</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Lime Lychee Juice</span>
+                                <div class="dots"></div>
+                                <span>$8.50</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Thai Milk Tea | Thai Lemon Iced Tea</span>
+                                <div class="dots"></div>
+                                <span>$8.50</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Pop Coke | Diet Coke | Sprite</span>
+                                <div class="dots"></div>
+                                <span>$3.90</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Iced Tea | Ginger Ale</span>
+                                <div class="dots"></div>
+                                <span>$3.90</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Sparkling water (Perrier)</span>
+                                <div class="dots"></div>
+                                <span>$6.25</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Tea Jasmin Tea | Green Tea | Ginger Tea</span>
+                                <div class="dots"></div>
+                                <span>$5.95</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---toronto alcohol--->
+                    <div class="alcohol">
+                        <h3>ALCOHOLIC DRINKS</h3>
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Draught Singha</span>
+                                <div class="dots"></div>
+                                <span>$9.95</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Singha</span>
+                                <div class="dots"></div>
+                                <span>$9.50</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Tiger</span>
+                                <div class="dots"></div>
+                                <span>$9.50</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Sapporo</span>
+                                <div class="dots"></div>
+                                <span>$9.50</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---toronto wines--->
+                    <div class="wines">
+                        <h3>WINES</h3>
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>House Red | House White Glass</span>
+                                <div class="dots"></div>
+                                <span>$10.95</span>
+                            </div>
+                            <p>6 oz</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>House Red | House White</span>
+                                <div class="dots"></div>
+                                <span>$24.95</span>
+                            </div>
+                            <p>Half Carafe</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>House Red | House White</span>
+                                <div class="dots"></div>
+                                <span>$46.95</span>
+                            </div>
+                            <p>Carafe</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Bottle</span>
+                                <div class="dots"></div>
+                                <span>$59.95</span>
+                            </div>
+                            <p>1.5 L</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---toronto desserts menu--->
+
+            <div class="desserts-menu" id="toronto-desserts-menu">
+                <h2>DESSERTS</h2>
+
+                <div class="food-option">
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/DSC00107-768x768.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Banana Bliss $15.95</h5>
+                            <p>Banana ice cream, Banana cake, Banana chips and Grilled Banana</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/DSC00100-768x768.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Petit Fours $17.95 (Set for two)</h5>
+                            <p>Flower-shaped I shortbread cookies, coconut jelly, steamed cassava cake, mixed fruits in Calamansi nectar with crushed ice</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/DSC00510-768x768.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Durian Mille-Feuille $16.95</h5>
+                            <p>Crisp puff pastry layers with durian cream filling</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/LIPE-Baldwin-98-768x768.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Thai Tea Ice Cream $6.95/ Coconut Ice Cream $6.95</h5>
+                            <p>Homemade Thai Tea Ice Cream topped with Carnation Evaporate milk</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/DSC00123-768x768.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Bi Co Moi $13.95</h5>
+                            <p>Phuket’s street style dessert.<br>Thai black glutinous rice with Coconut milk and on top with Coconut Ice-cream.</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/DSC00134-768x768.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Banana Nutella Toast $9.95</h5>
+                            <p>Banana, Nutella, Milk Toast</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/DSC00132-768x768.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Cocobana Toast $12.95</h5>
+                            <p>Banana, Coconut Ice cream, Caramel, Milk Toast</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/DSC00094-768x768.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Thai Tea Toast $11.95</h5>
+                            <p>Thai Tea ice cream, Crumble, Milk Toast</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/DSC00115-768x768.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Coconut Toast $12.95</h5>
+                            <p>Coconut Ice cream, Crumble, Caramel, Milk Toast</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/DSC00086-768x768.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Pandan Toast $13.95</h5>
+                            <p>Coconut Ice cream, Pandan Steamed Custard, Crumble, Milk Toast</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/LIPE-Baldwin-97-768x768.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Mango Sunday $16.95</h5>
+                            <p>Diary-free Mango gelato, young coconut meat, coconut sticky rice, mango slices, mango sauce</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/DSC00087-768x768.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Taro Ice Cream $13.95</h5>
+                            <p>Taro Ice Cream, rice cracker, caramelized taro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--===================================== SCARBOROUGH MENU =====================================-->
+
+    <div class="scarborough" id="scarborough">
+        <div class="scarborough-menu" id="scarborough-menu">
+            <ul class="menu-section">
+                <a href="#scarborough-special-menu" class="active">Special Menu</a>
+                <a href="#scarborough-regular-menu">Regular Menu</a>
+                <a href="#scarborough-drinks-menu">Drinks</a>
+                <a href="#scarborough-desserts-menu">Desserts</a>
+            </ul>
+            
+            <!---scarborough special menu--->
+
+            <div class="special-menu" id="scarborough-special-menu">
+                <h2>SPECIAL MENU</h2>
+
+                <div class="food-option">
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/DSC00141-768x576.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Khao Pad Puu $24.95</h5>
+                            <p>Crab fried rice, egg, onion and served with spicy fish sauce</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2024/08/att.Eadmgcik8ZnQBh3lnvNGDfNCWNOWIq-we6bR5C7HPEI-edited-768x576.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Gui Chai Tod $8.95</h5>
+                            <p>Fried garlic chive dumplings, a mix of tapioca and rice flour with garlic chives, served with spicy dipping sauce</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2023/01/yumsapparod1-768x576.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Yum Sapparod $15.95 (spicy)</h5>
+                            <p>Pineapple salad with squid, shrimp, onion, tomato, Chinese celery, chilli and peanut</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2023/03/goongmuan-edited-768x576.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Goong Moun $15.95 (spicy)</h5>
+                            <p>Fried crispy skin tofu rolled with shrimp, carrot, chilli, betel leaf and served with Arjard sauce</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2023/11/403410905_863564288808711_1489952619498660965_n-1024x576.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Pad Sam Mhen (Stinky Noodle) $25.95</h5>
+                            <p>Vermicelli rice noodle stir-fried with clam, shrimp, shrimp paste, garlic, holy basil, onion and stink bean</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2023/04/327019199_1220111525530779_8380117215948720_n-edited.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Khao Pad Pla $26.95 (spicy)</h5>
+                            <p>Fried rice with mackerel fish. egg, onion, carrot, lemongrass and topped with kastuobushi flakes</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2023/04/277855270_1092980794580734_2557900595303910608_n-edited.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Khao Neow Gaeng $24.95 (spicy)</h5>
+                            <p>Stir-Fried Pineapple curry chicken,  Served with coconut curry sticky rice</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2023/12/IMG_7388-1536x922.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Pla Nueng Manao $35.95 (spicy)</h5>
+                            <p>Steamed whole sea bass with lime juice , coriander, garlic, napa</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2024/02/IMG_9861-768x576.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Kor Moo Gaeng Kua $24.95 (spicy)</h5>
+                            <p>Coconut curry with pork jowl, Thai acacia, baby eggplant, betel leaves</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2024/05/DSC02043-edited-2048x1536.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Gai Tom Kamin $27.95 (spicy)</h5>
+                            <p>Chicken in turmeric broth with lemongrass, ginger, lime juice and kaffir lime leaves, served in a small hot pot</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-extend">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2024/05/IMG_1527-edited-2048x1366.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Gaeng Gai Khao Mun $24.95 (spicy)</h5>
+                            <p>The unique local dish from Songkhla province. Dried chicken curry with coconut rice (butterfly pea flower) and topped with shrimps, dry fish Anchovies, egg, onion, long bean and homemade chilli tamarind paste</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---scarborough regular menu--->
+
+            <div class="regular-menu" id="scarborough-regular-menu">
+                <p>
+                    <b>Spicy Level:</b> Mild, Medium, Spicy, or Extra Spicy <br>
+                    Please let us know if you have any <b>allergies or dietary</b> restrictions. <br>
+                    <b>18%</b> Gratuity may be added to party of 5 or more. <br>
+                    A plating fee of <b>$4/head</b> will be charged for outside food/drinks.
+                </p>
+
+                <h2>REGULAR MENU</h2>
+
+                <div class="food-option-2">
+
+                    <!--Appertizer menu-->
+                    <h3>APPERTIZER</h3>
+                    <div class="appertizer">
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2023/04/295853742_740365103914062_5677654467086800012_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Gai Gor Lae $13.95</h5>
+                                <p>Grilled chicken with coconut curry sauce</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/96427101_107930654126731_7523707107542790330_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Peek Gai Tom Yum $16.95</h5>
+                                <p>Fried chicken wings with Tom Yum flavour</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/73097199_2152017355101883_5504228312909884246_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Muek Yang $16.95</h5>
+                                <p>Grilled squid served with chilli lime sauce</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/IMG_78332.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Geow Goong $14.50</h5>
+                                <p>Steamed shrimp dumpling with garlic oil, served with chilli lime sauce</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2023/04/317189452_505865984840045_4889177622157846654_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Moo Tod $16.50</h5>
+                                <p>Fried pork belly served with chilli lime sauce</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/IMG_8440-scaled.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Gai Tod Hat Yai $16.50</h5>
+                                <p>Southern Thailand fried chicken with onion served with plum sauce</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Soup menu-->
+                    <h3>SOUP</h3>
+                    <div class="soup">
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/osafas6.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Tom Yum (spicy)</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                                <div class="more-option-and-price">
+                                    <p>
+                                        Veggies Tofu $9.95<br>
+                                        Chicken $10.95<br>
+                                        Shrimp $13.95
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/oghdfty7.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Tom Kha</h5>
+                                <p>Coconut soup with tomatoes, mushroom and onion</p>
+                                <div class="more-option-and-price">
+                                    <p>
+                                        Veggies Tofu $9.95<br>
+                                        Chicken $10.95<br>
+                                        Shrimp $13.95
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Salad menu-->
+                    <h3>SALAD</h3>
+                    <div class="salad">
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/74665254_2452097551565343_3766755125839268103_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Pla Goong $16.95</h5>
+                                <p>Lemongrass salad with shrimp, onion, mint and chilli</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/fdgsdr6565.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Yum Ma Muang $13.95</h5>
+                                <p>Mango Salad with onion and peanut</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2023/01/yumsapparod1-1024x769.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Yum Sapparod $15.95</h5>
+                                <p>Pineapple salad with squid, shrimp, onion, tomato, Chinese celery, chilli and peanut</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---Curry menu--->
+                    <h3>CURRY</h3>
+                    <div class="curry">
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2023/04/317360929_1091196538121031_5101115189182371241_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Gaeng Keow Whan (spicy)</h5>
+                                <p>Green curry with bamboo shoot</p>
+                                <div class="more-option-and-price">
+                                    <p>
+                                        Veggies Tofu $19.95<br>
+                                        Chicken $21.95
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2023/04/308870311_3399097637082725_7876786622206737750_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Mas Sa Man</h5>
+                                <p>Tamarind coconut red curry, peanut, and potato</p>
+                                <div class="more-option-and-price">
+                                    <p>
+                                        Veggies Tofu $19.95<br>
+                                        Chicken $21.95
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---Hot plate menu--->
+                    <h3>HOT PLATE</h3>
+                    <div class="hot-plate">
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/115474078_1177794005909950_7330503128353989104_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Koong Ob Woonsen $27.95</h5>
+                                <p>Steamed glass noodle with shrimp, Napa, ginger and Chinese celery served with chilli lime sauce</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2023/04/327019199_1220111525530779_8380117215948720_n-edited.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Khao Pad Pla $26.95</h5>
+                                <p>Fried rice with mackerel fish. egg, onion, carrot, lemongrass and topped with kastuobushi flakes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---Rice menu--->
+                    <h3>RICE</h3>
+                    <div class="rice">
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/67238455_2945880182121082_9010505814960935660_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Pad Gra Prao (spicy)</h5>
+                                <p>Holy basil, onion, and chilli topped with fried egg</p>
+                                <div class="more-option-and-price">
+                                    <p>
+                                        Minced Chicken $20.95<br>
+                                        Crispy Pork $21.95
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/93259527_317000475935101_1252012325884495329_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Khao Pad</h5>
+                                <p>Pineapple fried rice, curry powder, egg, onion, and green pea</p>
+                                <div class="more-option-and-price">
+                                    <p>
+                                        Veggies Tofu $19.95<br>
+                                        Chicken $21.95<br>
+                                        Shrimp $23.95
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/82550362_112372220301513_8414360179004246294_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Pad Ka Na (spicy) </h5>
+                                <p>Chinese broccoli with garlic, onion and chilli</p>
+                                <div class="more-option-and-price">
+                                    <p>
+                                        Tofu $18.95<br>
+                                        Crispy Pork $22.95
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---Noodle menu--->
+                    <h3>NOODLE</h3>
+                    <div class="noodle">
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/74534338_2409964872561826_8382332190985163488_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Pad Thai</h5>
+                                <p>Rice noodles, egg, tofu, bean sprouts, chives, tamarind sauce, and ground peanut</p>
+                                <div class="more-option-and-price">
+                                    <p>
+                                        Veggies Tofu $19.95<br>
+                                        Chicken $20.95<br>
+                                        Shrimp $23.95
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2023/04/337395534_184671594319948_594278718256569027_n-e1680586277496.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Pad Kee Mao (spicy)</h5>
+                                <p>Flat rice noodles, egg, chilli, green bean, basil, mushroom, and baby pepper corn</p>
+                                <div class="more-option-and-price">
+                                    <p>
+                                        Veggies Tofu $19.95<br>
+                                        Beef $21.95
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2023/04/326943116_844162756657297_4465837741099571660_n-e1680586782297.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Pad See Ew</h5>
+                                <p>Flat rice noodle, egg, Chinese broccoli, and soy sauce</p>
+                                <div class="more-option-and-price">
+                                    <p>
+                                        Veggies Tofu $19.95<br>
+                                        Chicken $20.95
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2023/04/Screen-Shot-2023-04-04-at-1.16.40-AM.png" alt="food image">
+                            <div class="food-text">
+                                <h5>Guey Tiew Khaek (Isalamic Noodle)</h5>
+                                <p>Rice noodle with boiled egg, peanut and red curry gravy</p>
+                                <div class="more-option-and-price">
+                                    <p>
+                                        Veggies Tofu $19.95<br>
+                                        Beef $21.95
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/59401042_805653106487253_3808141921802436782_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Khao Soi</h5>
+                                <p>Egg noodle with yellow curry, onion, cabbage and bean sprouts</p>
+                                <div class="more-option-and-price">
+                                    <p>
+                                        Veggies Tofu $19.95<br>
+                                        Braised Beef $21.95
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---Southern Thai menu--->
+                    <h3>SOUTHERN THAI</h3>
+                    <div class="southern-thai">
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/60418743_2661121043957855_8186653978103524497_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Gaeng Ka Ti Sa Tor Nua $25.95 (spicy)</h5>
+                                <p>Coconut green curry beef with plantain and stink bean</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2023/03/IMG_0904.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Choo Chee Pla Too $24.95 (spicy)</h5>
+                                <p>Fried mackerel fish topped with coconut curry</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/62015673_2314654825462531_5327463574846661866_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Ka Nom Jeen Gaeng Tai Pla $25.95 (spicy)</h5>
+                                <p>Rice noodles in fish curry with baby eggplant, bamboo shoots and green bean</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/89219523_138914777458275_4727632631202758293_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Gaeng Cha Plu $24.95 (spicy)</h5>
+                                <p>Coconut green curry mussels with betel leaf</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2023/04/310026480_517244343741748_6583761406630655881_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Gaeng Kua Moo $23.95 (spicy)</h5>
+                                <p>Pork ribs and ginger curry</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/retet.png" alt="food image">
+                            <div class="food-text">
+                                <h5>Pad Phed Sa Tor Koong $26.95 (spicy)</h5>
+                                <p>Stir-fried stink bean with shrimp and curry sauce</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/67637355_2789980714362705_8281662201219336563_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Ka Nom Jeen Nam Ya $24.95 (spicy) </h5>
+                                <p>Rice noodles in minced fish curry served with boiled egg, green bean, bean sprouts and cabbage</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="./image/food.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Kua Gling (spicy)</h5>
+                                <p>Stir-fried dried curry with lemongrass, kaffir lime leaves and topped with fried egg</p>
+                                <div class="more-option-and-price">
+                                    <p>
+                                        Minced Chicken $21.95<br>
+                                        Minced pork $21.95
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---Chef special menu--->
+                    <h3>CHEF SPECIAL</h3>
+                    <div class="chef-special">
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/79515709_454145205248949_355446166244613618_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Luok Jhim $35.95</h5>
+                                <p>Steamed shrimps, mussels, squid, fish served with chilli lime sauce</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2023/04/336958894_547170527503906_2370116314012169899_n-e1680586570275.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Prik Gaeng Moo Krob $25.95 (spicy)</h5>
+                                <p>Stir-Fried crispy pork with curry paste and green bean</p>
+                            </div>
+                        </div>
+
+                        <div class="food-card-2">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/82869760_477712719558046_4012060150525732828_n.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Prik Pao Talay $38.95</h5>
+                                <p>Stir-Fried smoked chilli platter, shrimps, mussels, squid, clams and basil</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!---Side dish menu--->
+                    <h3>SIDE DISH</h3>
+                    <div class="side-dish">
+                        <div class="side-dish-item">
+                            <span>Steamed Jasmine Rice</span>
+                            <div class="dots"></div>
+                            <span>$3.95</span>
+                        </div>
+
+                        <div class="side-dish-item">
+                            <span>Coconut Rice</span>
+                            <div class="dots"></div>
+                            <span>$4.50</span>
+                        </div>
+
+                        <div class="side-dish-item">
+                            <span>Coconut Sticky Rice</span>
+                            <div class="dots"></div>
+                            <span>$4.95</span>
+                        </div>
+
+                        <div class="side-dish-item">
+                            <span>Sticky Rice</span>
+                            <div class="dots"></div>
+                            <span>$4.50</span>
+                        </div>
+
+                        <div class="side-dish-item">
+                            <span>Steamed Noodle</span>
+                            <div class="dots"></div>
+                            <span>$4.50</span>
+                        </div>
+
+                        <div class="side-dish-item">
+                            <span>Fried Egg</span>
+                            <div class="dots"></div>
+                            <span>$2.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---scarborough drinks menu--->
+
+            <div class="drinks-menu" id="scarborough-drinks-menu">
+                <h2>DRINKS</h2>
+
+                <div class="drinks-list">
+
+                    <!--scarborough popular drinks-->
+                    <div class="popular-drinks">
+                        <div class="food-card-1">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2023/03/S__37543947-edited-768x1025.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Thai Iced Green Tea $6.95</h5>
+                            </div>
+                        </div>
+
+                        <div class="food-card-1">
+                            <img src="https://kohlipe.ca/wp-content/uploads/2021/09/pineapplebasil-768x1024.jpg" alt="food image">
+                            <div class="food-text">
+                                <h5>Pineapple Mint Smoothie (1 litre for share) $16.95</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---scarborough rum--->
+                    <div class="rum">
+                        <h3>RUM</h3>
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Tipsy Thai Tea</span>
+                                <div class="dots"></div>
+                                <span>$12.95</span>
+                            </div>
+                            <p>1.5 oz Dark Rum, Thai Iced Tea.</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Thai Tea Frizz</span>
+                                <div class="dots"></div>
+                                <span>$12.95</span>
+                            </div>
+                            <p>1.0 oz Dark Rum, 0.5 oz Peach Schnapps, Black Thai Tea, Lime Juice, Mints, Soda Water</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Mango-Licious</span>
+                                <div class="dots"></div>
+                                <span>$12.95</span>
+                            </div>
+                            <p>1.5 oz Coconut Rum, Mango Juice, Grenadine</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Lipe Mojito</span>
+                                <div class="dots"></div>
+                                <span>$13.95</span>
+                            </div>
+                            <p>1.5 oz Rum, Lemongrass Syrup, Lime Juice, Mint, Butterfly Pea Flower, Soda Water</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Pineappletini</span>
+                                <div class="dots"></div>
+                                <span>$12.95</span>
+                            </div>
+                            <p>0.5 oz Pineapple Rum, O.5 oz Coconut Rum, 0.5 oz Vodka, Pineapple Juice, Grenadine</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Pina Colada (Slush)</span>
+                                <div class="dots"></div>
+                                <span>$13.95</span>
+                            </div>
+                            <p>1.5 oz Coconut Rum, 0.5 oz Pineapple Rum, Coconut Cream, Pineapple Juice</p>
+                        </div>
+                    </div>
+
+                    <!---scarborough vodka--->
+                    <div class="vodka">
+                        <h3>VODKA</h3>
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Lycheetini</span>
+                                <div class="dots"></div>
+                                <span>$12.95</span>
+                            </div>
+                            <p>1.5 oz Vodka, Lychee Juice, Grenadine</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Sex On The Beach</span>
+                                <div class="dots"></div>
+                                <span>$12.95</span>
+                            </div>
+                            <p>1 oz Vodka, 0.5 oz Peach Schnapps, Orange Juice, Cranberry Juice</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Coco Mango</span>
+                                <div class="dots"></div>
+                                <span>$13.95</span>
+                            </div>
+                            <p>0.75 oz Vodka infused Pandan, 0.5 oz Mango Vodka, 0.5 oz Rum Chata, Mango Juice, Coconut cream, Lime juice</p>
+                        </div>
+                    </div>
+
+                    <!---scarborough gin--->
+                    <div class="gin">
+                        <h3>GIN</h3>
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Lipe Collins</span>
+                                <div class="dots"></div>
+                                <span>$15.95</span>
+                            </div>
+                            <p>1.5 oz Empress Gin, Lychee Juice, Mango Juice, Soda Water</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Straw-Basil Mojito</span>
+                                <div class="dots"></div>
+                                <span>$13.95</span>
+                            </div>
+                            <p>1.5 oz Strawberry Gin, Syrup, Lime Juice, Thai Basil, Strawberry, Soda Water</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>P&B Gin Tonic</span>
+                                <div class="dots"></div>
+                                <span>$13.95</span>
+                            </div>
+                            <p>1.5 oz Bombay Gin, Pineapple, Thai Basil, Sugarcane Sugar, Tonic Water</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Cocoa Negroni</span>
+                                <div class="dots"></div>
+                                <span>$15.95</span>
+                            </div>
+                            <p>1 oz. Strawberry Gin, 1 oz. Campari, 0.75 oz Sweet Vermouth, 0.25 oz Cream de Cocoa</p>
+                        </div>
+                    </div>
+
+                    <!---scarborough tequila/mezcal--->
+                    <div class="tequila-mezcal">
+                        <h3>TEQUILA/MEZCAL</h3>
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Blue Margarita (slush)</span>
+                                <div class="dots"></div>
+                                <span>$13.95</span>
+                            </div>
+                            <p>1.0 oz Blanco Tequila, 1.0 oz Blue Curacao, Lime Juice</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Tequila Sunrise</span>
+                                <div class="dots"></div>
+                                <span>$12.95</span>
+                            </div>
+                            <p>1.5 oz Blanco Tequila, Orange Juice, Grenadine</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Smokey Negroni</span>
+                                <div class="dots"></div>
+                                <span>$16.95</span>
+                            </div>
+                            <p>1 oz. Mezcal, 0.5 Blanco Vermont, 0.25 oz, Campari infused Thai Tea</p>
+                        </div>
+                    </div>
+
+                    <!---scarborough whisky/bourbon--->
+                    <div class="whisky-bourbon">
+                        <h3>WHISKY/BOURBON</h3>
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Toronto</span>
+                                <div class="dots"></div>
+                                <span>$15.95</span>
+                            </div>
+                            <p>2 oz Canadian Whisky, 0.25 oz Fernet Branca, 0.25 oz Maple Syrup, Angostura Bitter</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Manhattan Blanco</span>
+                                <div class="dots"></div>
+                                <span>$15.95</span>
+                            </div>
+                            <p>1.5 oz Bourbon, 1.5 oz Blanco Vermouth, Lemon peel, Orange bitter</p>
+                        </div>
+                    </div>
+
+                    <!---scarborough pitcher--->
+                    <div class="pitcher">
+                        <h3>PITCHER</h3>
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Spicy-M Sangria</span>
+                                <div class="dots"></div>
+                                <span>$43.00</span>
+                            </div>
+                            <p>8.0 oz White Wine, 1.5 oz Vodka, 1 oz Triple Sec, Mango Juice,Coconut syrup, Holy Basil, Mango, Red Chili, Ginger Ale</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Emerald Cave</span>
+                                <div class="dots"></div>
+                                <span>$43.00</span>
+                            </div>
+                            <p>Dark Rum 3 oz., Vodka 2 oz, Blue Curacao 1.5 oz, Red bull, Lime Juice, Lemongrass syrup, Pineapple Juice, Lychee Juice, Lychee, Mints, Sprite</p>
+                        </div>
+                    </div>
+
+                    <!---scarborough other spirit--->
+                    <div class="spirit">
+                        <h3>OTHER SPIRIT</h3>
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Mark’s Mark Bourbon</span>
+                                <div class="dots"></div>
+                                <span>$10.00</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Jameson Irish Whiskey</span>
+                                <div class="dots"></div>
+                                <span>$9.00</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Lot No.40 Dark Oak Canadian Whisky</span>
+                                <div class="dots"></div>
+                                <span>$10.00</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Espolon Reposado Tequila</span>
+                                <div class="dots"></div>
+                                <span>$10.00</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Sombra Joven Mezcal</span>
+                                <div class="dots"></div>
+                                <span>$14.00</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Empress Gin</span>
+                                <div class="dots"></div>
+                                <span>$10.00</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Tanqueray Gin</span>
+                                <div class="dots"></div>
+                                <span>$8.00</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Appleton Estate Reserve 8 Years</span>
+                                <div class="dots"></div>
+                                <span>$9.00</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Gosling Bermuda Black Seal Rum</span>
+                                <div class="dots"></div>
+                                <span>$8.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---scarborough low abv--->
+                    <div class="low-abv">
+                        <h3>LOW ABV</h3>
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Little Fishbowl (Low ABV)</span>
+                                <div class="dots"></div>
+                                <span>$12.95</span>
+                            </div>
+                            <p>2.0 oz Hypnotic , 2 oz White Wine, 0.25 oz Blue Curacao , Ginger Ale</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Keep it cool (Low ABV)</span>
+                                <div class="dots"></div>
+                                <span>$12.95</span>
+                            </div>
+                            <p>2 oz. Rosso Vermouth, 0.5 oz Dark Rum, Cranberry Juice, Syrup, Lemon wheel, Soda water</p>
+                        </div>
+                    </div>
+
+                    <!---scarborough mocktails--->
+                    <div class="mocktails">
+                        <h3>MOCKTAILS</h3>
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Sunny Smile </span>
+                                <div class="dots"></div>
+                                <span>$9.50</span>
+                            </div>
+                            <p>Pineapple Juice, Orange Juice, Lime juice, Syrup, Soda Water</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Jas-mi-peach</span>
+                                <div class="dots"></div>
+                                <span>$9.50</span>
+                            </div>
+                            <p>Peach Juice, Jasmin Syrup, Lime Juice, Soda Water</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Juice Mango | Lychee</span>
+                                <div class="dots"></div>
+                                <span>$6.95</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Lime Lychee Juice</span>
+                                <div class="dots"></div>
+                                <span>$7.95</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Thai Milk Tea | Thai Lemon Iced Tea</span>
+                                <div class="dots"></div>
+                                <span>$6.95</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Pop Coke | Diet Coke | Sprite</span>
+                                <div class="dots"></div>
+                                <span>$3.50</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Iced Tea | Ginger Ale</span>
+                                <div class="dots"></div>
+                                <span>$3.50</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Sparkling water (Perrier)</span>
+                                <div class="dots"></div>
+                                <span>$5.95</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Tea Jasmin Tea | Green Tea | Ginger Tea</span>
+                                <div class="dots"></div>
+                                <span>$5.95</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---scarborough alcohol--->
+                    <div class="alcohol">
+                        <h3>ALCOHOLIC DRINKS</h3>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Singha</span>
+                                <div class="dots"></div>
+                                <span>$8.95</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Tiger</span>
+                                <div class="dots"></div>
+                                <span>$8.50</span>
+                            </div>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>Sapporo</span>
+                                <div class="dots"></div>
+                                <span>$8.50</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!---scarborough wines--->
+                    <div class="wines">
+                        <h3>WINES</h3>
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>House Red | House White Glass</span>
+                                <div class="dots"></div>
+                                <span>$9.95</span>
+                            </div>
+                            <p>6 oz</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>House Red | House White</span>
+                                <div class="dots"></div>
+                                <span>$22.95</span>
+                            </div>
+                            <p>Half Carafe</p>
+                        </div>
+
+                        <div class="list-item">
+                            <div class="item-header">
+                                <span>House Red | House White</span>
+                                <div class="dots"></div>
+                                <span>$44.95</span>
+                            </div>
+                            <p>Carafe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---scarborough desserts menu--->
+
+            <div class="desserts-menu" id="scarborough-desserts-menu">
+                <h2>DESSERTS</h2>
+
+                <div class="food-option">
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2024/04/IMG_0751-2-768x576.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Khao Neow Ma Muang $13.95</h5>
+                            <p>Mango Coconut Sticky Rice</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2024/04/IMG_0774-768x576.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Khao Neow Tu Rian $13.95</h5>
+                            <p>Durian coconut sticky rice</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2024/04/IMG_0744-768x576.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Ruam Mit $14.95</h5>
+                            <p>Palm’s seed, Jackfruit, water chestnut and coconut jelly served with coconut milk</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2024/03/IMG_9911-768x576.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Bi Co Moi $13.95</h5>
+                            <p>Phuket’s street style dessert.<br>Thai black glutinous rice with Coconut milk and on top with Coconut Ice-cream.</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/DSC00134-768x768.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Banana Nutella Toast $9.95</h5>
+                            <p>Banana, Nutella, Milk Toast</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/DSC00132-768x768.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Cocobana Toast $12.95</h5>
+                            <p>Banana, Coconut Ice cream, Caramel, Milk Toast</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/DSC00094-768x768.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Thai Tea Toast $11.95</h5>
+                            <p>Thai Tea ice cream, Crumble, Milk Toast</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/DSC00115-768x768.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Coconut Toast $12.95</h5>
+                            <p>Coconut Ice cream, Crumble, Caramel, Milk Toast</p>
+                        </div>
+                    </div>
+
+                    <div class="food-card-1">
+                        <img src="https://kohlipe.ca/wp-content/uploads/2025/12/DSC00086-768x768.jpg" alt="food image">
+                        <div class="food-text">
+                            <h5>Pandan Toast $13.95</h5>
+                            <p>Coconut Ice cream, Pandan Steamed Custard, Crumble, Milk Toast</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!---Footer section--->
+    <div class="footer">
+        <div class="logo">
+                <img src="./image/koh-lipe-logo.png" alt="Koh Lipe Logo">
+            </div>
+        <div class="information">
+            <div class="infor">
+                <p>35 Baldwin St, Toronto, ON M5T 1L1</p>
+                <p>
+                    TEL: <a href="tel: 9999999999">(999) 999-9999</a>
+                    Email: <a href="mailto: examples@gmail.com">examples@gmail.com</a>
+                </p>
+            </div>
+
+            <div class="infor">
+                <p>4675 Steeles Ave E, Scarborough, ON M1V 0B7</p>
+                <p>
+                    TEL: <a href="tel: 9999999999">(999) 999-9999</a>
+                    Email: <a href="mailto: examples@gmail.com">examples@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
