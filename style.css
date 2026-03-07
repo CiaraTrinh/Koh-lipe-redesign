@@ -1604,7 +1604,8 @@ header {
     
     /* navigation */
     .nav-bar {
-        padding: 0 10px;
+        width: 100%;
+        padding: 0;
     }
     
     .nav-bar .logo {
@@ -1612,6 +1613,9 @@ header {
     }
 
     /* address bar */
+    .address-bar {
+        width: 100%;
+    }
     .address-bar p {
         font-size: 14px; 
         text-align: center;
@@ -1790,6 +1794,9 @@ header {
     }
 
     /* footer */
+    .footer {
+        width: 100%;
+    }
     .footer p {
         font-size: 14px;
         padding: 0 0 10px 0;
