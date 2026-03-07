@@ -14,8 +14,10 @@ body {
     display: grid;
     align-items: center;
     justify-content: center;
+    justify-items: center;
     background: #F6F5F2;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 a {
@@ -34,6 +36,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    width: 100%;
 }
 
 .nav-bar {
@@ -136,6 +139,7 @@ header {
     background: #E2C799;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 14px;
     width: 100vw;
 }
@@ -1566,6 +1570,7 @@ header {
     gap: 15px;
     padding: 20px;
     width: 100vw;
+    box-sizing: border-box;
 }
 
 .footer .information {
@@ -1596,10 +1601,11 @@ header {
 
     /* header */
     header {
-        width: 100%;
+        width: 100vw;
         display: flex;
         align-items: center;
         justify-content: center;
+        box-sizing: border-box;
     }
     
     /* navigation */
@@ -1614,10 +1620,12 @@ header {
 
     /* address bar */
     .address-bar {
-        width: 100%;
+        width: 100vw;
         justify-content: center;
         align-items: center;
         padding: 10px 16px;
+        box-sizing: border-box;
+
     }
     
     .address-bar p {
@@ -1799,8 +1807,9 @@ header {
 
     /* footer */
     .footer {
-        width: 100%;
+        width: 100vw;
         padding: 20px 16px;
+        box-sizing: border-box;
     }
     .footer p {
         font-size: 14px;
@@ -1808,5 +1817,3 @@ header {
     }
 
 }
-
-
