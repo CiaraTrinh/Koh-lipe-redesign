@@ -1605,7 +1605,7 @@ header {
     /* navigation */
     .nav-bar {
         width: 100%;
-        padding: 0 10px;
+        padding: 10px;
     }
     
     .nav-bar .logo {
@@ -1617,7 +1617,9 @@ header {
         width: 100%;
         justify-content: center;
         align-items: center;
+        padding: 10px 16px;
     }
+    
     .address-bar p {
         font-size: 14px; 
         text-align: center;
@@ -1798,8 +1800,7 @@ header {
     /* footer */
     .footer {
         width: 100%;
-        justify-content: center;
-        align-items: center;
+        padding: 20px 16px;
     }
     .footer p {
         font-size: 14px;
@@ -1807,4 +1808,5 @@ header {
     }
 
 }
+
 
